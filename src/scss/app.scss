@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+
+$font1: 'Recursive', sans-serif;
+
+$dark-background: #3b4664;
+$dark-screen: #181f32;
+$dark-pad: #252d44;
+$dark-letter: #fffffd;
+$dark-numbers: #434959;
+$dark-button1: #eae3db;
+$dark-button2: #647299;
+$dark-button3: #d13f30;
+$dark-shadow1: #b2a295;
+$dark-shadow2: #424e74;
+$dark-shadow3: #8f2316;
+
+$light-background: #e6e6e6;
+$light-screen: #eeeeee;
+$light-pad: #d3cdcd;
+$light-letter: #36362c;
+$light-numbers: #36362c;
+$light-button1: #e5e4e0;
+$light-button2: #388187;
+$light-button3: #c85401;
+$light-shadow1: #a69c92;
+$light-shadow2: #1c6166;
+$light-shadow3: #873b01;
+
+$third-background: #17062a;
+$third-screen: #1e0836;
+$third-pad: #1e0836;
+$third-letter: #f5dc2a;
+$third-numbers: #f5dc2a;
+$third-button1: #331b4d;
+$third-button2: #56077c;
+$third-button3: #00decf;
+$third-shadow1: #851c9c;
+$third-shadow2: #bf16f5;
+$third-shadow3: #6cf8ef;
+
+.background {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: felx;
+    font-family: $font1;
+    width: 50rem;
+    height: 60rem;
+    border: 1px solid red;
+}

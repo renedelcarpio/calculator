@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__toogle {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.toogle__buttons {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+    margin-left: 1rem;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    background-color: black;
+}
+
+.header__toogle--button {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+}

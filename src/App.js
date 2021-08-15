@@ -1,9 +1,17 @@
 import React from 'react';
+import './scss/app.scss';
+import Buttons from './components/Buttons';
+import Header from './components/Header';
+import Screen from './components/Screen';
 
 const App = () => {
 	return (
-		<div>
-			<h1>hola</h1>
+		<div className='background'>
+			<div className='calculator'>
+				<Header />
+				<Screen />
+				<Buttons />
+			</div>
 		</div>
 	);
 };
