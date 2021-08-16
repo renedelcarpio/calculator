@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 import '../scss/header.scss';
 
 const Header = () => {
-	const [theme, setTheme] = useState(1);
+	const { setTheme } = useContext(ThemeContext);
 
 	const handleClick = (e) => {
 		setTheme(e.target.value);
@@ -17,12 +18,8 @@ const Header = () => {
 					<button className='header__toogle--button' onClick={handleClick}>
 						1
 					</button>
-					<button className='header__toogle--button' onClick={handleClick}>
-						2
-					</button>
-					<button className='header__toogle--button' onClick={handleClick}>
-						3
-					</button>
+					<button className='header__toogle--button'>2</button>
+					<button className='header__toogle--button'>3</button>
 				</div>
 			</div>
 		</div>
