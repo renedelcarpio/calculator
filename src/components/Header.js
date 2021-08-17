@@ -3,23 +3,23 @@ import { ThemeContext } from '../context/ThemeContext';
 import '../scss/header.scss';
 
 const Header = () => {
-	const { setTheme } = useContext(ThemeContext);
+	let { theme, setTheme } = useContext(ThemeContext);
 
-	const handleClick = (e) => {
-		setTheme(e.target.value);
+	const handleClick = () => {
+		setTheme(theme > 2 ? (theme = 1) : theme + 1);
 	};
 
 	return (
 		<div className='header'>
 			<h1 className='text'>calc</h1>
 			<div className='header__toogle'>
-				<h4 className='text'>THEME</h4>
+				<button className='toogle__button' onClick={handleClick}>
+					THEME
+				</button>
 				<div className='toogle__buttons'>
-					<button className='header__toogle--button' onClick={handleClick}>
-						1
-					</button>
-					<button className='header__toogle--button'>2</button>
-					<button className='header__toogle--button'>3</button>
+					<span className={theme === 1 ? 'toogle dark' : 'toogle'}>1</span>
+					<span className={theme === 2 ? 'toogle light' : 'toogle'}>2</span>
+					<span className={theme === 3 ? 'toogle third' : 'toogle'}>3</span>
 				</div>
 			</div>
 		</div>

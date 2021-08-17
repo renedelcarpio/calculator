@@ -7,6 +7,8 @@
     background-color: beige;
     justify-content: center;
     align-items: center;
+    background-color: $dark-background;
+    color: $dark-letter;
 }
 
 .calculator {
@@ -14,5 +16,4 @@
     font-family: $font1;
     width: 50rem;
     height: 60rem;
-    border: 1px solid red;
 }
