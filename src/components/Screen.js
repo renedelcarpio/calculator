@@ -1,9 +1,13 @@
 import React, { useContext } from 'react';
 import '../scss/screen.scss';
 import { ThemeContext } from '../context/ThemeContext';
+import { ResultContext } from '../context/ResultContext';
 
 const Screen = () => {
-	let { theme } = useContext(ThemeContext);
+	const { theme } = useContext(ThemeContext);
+
+	const { result } = useContext(ResultContext);
+
 	return (
 		<div
 			className={
@@ -14,7 +18,7 @@ const Screen = () => {
 					: 'screen-container third'
 			}
 		>
-			<h1>Result</h1>
+			<h1>{result}</h1>
 		</div>
 	);
 };

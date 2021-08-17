@@ -11,9 +11,24 @@ const Header = () => {
 
 	return (
 		<div className='header'>
-			<h1 className='text'>calc</h1>
+			<h1
+				className={
+					theme === 1 ? 'calc-dark' : theme === 2 ? 'calc-light' : 'calc-third'
+				}
+			>
+				calc
+			</h1>
 			<div className='header__toogle'>
-				<button className='toogle__button' onClick={handleClick}>
+				<button
+					className={
+						theme === 1
+							? 'toogle__button dark'
+							: theme === 2
+							? 'toogle__button light'
+							: 'toogle__button third'
+					}
+					onClick={handleClick}
+				>
 					THEME
 				</button>
 				<div className='toogle__buttons'>

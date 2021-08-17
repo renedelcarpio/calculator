@@ -8,6 +8,18 @@
     margin-bottom: 1rem;
 }
 
+.calc-dark {
+    color: $dark-letter;
+}
+
+.calc-light {
+    color: $light-letter;
+}
+
+.calc-third {
+    color: $third-letter;
+}
+
 .header__toogle {
     display: flex;
     align-items: center;
@@ -15,9 +27,20 @@
 }
 
 .toogle__button {
-    padding: 0 0.2rem;
+    padding: 0 0.3rem;
     border: none;
     border-radius: 0.2rem;
+    color: $dark-letter;
+    font-weight: bold;
+    &.dark {
+        background-color: $dark-button3;
+    }
+    &.light {
+        background-color: $light-button3;
+    }
+    &.third {
+        background-color: $third-button3;
+    }
 }
 
 .toogle__buttons {
