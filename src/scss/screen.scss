@@ -8,8 +8,18 @@
     align-items: center;
     margin-bottom: 2rem;
     padding: 2rem;
-    background-color: $dark-screen;
-    color: $dark-letter;
     border-radius: 1rem;
     font-size: 2rem;
+    &.dark {
+        background-color: $dark-screen;
+        color: $dark-letter
+    }
+    &.light {
+        background-color: $light-screen;
+        color: $light-letter;
+    }
+    &.third {
+        background-color: $third-screen;
+        color: $third-letter;
+    }
 }

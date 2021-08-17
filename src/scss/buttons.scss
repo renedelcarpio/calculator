@@ -7,8 +7,16 @@
     justify-items: center;
     align-items: center;
     padding: 2rem;
-    background-color: $dark-pad;
     border-radius: 1rem;
+    &.dark {
+        background-color: $dark-pad;
+    }
+    &.light {
+        background-color: $light-pad;
+    }
+    &.third {
+        background-color: $third-pad;
+    }
 }
 
 .button {
@@ -19,7 +27,29 @@
     align-items: center;
     background-color: $dark-button1;
     color: $dark-numbers;
+    border: none;
+    border-right: 3px solid $dark-shadow1;
+    border-bottom: 3px solid $dark-shadow1;
     border-radius: 1rem;
+    cursor: pointer;
+    &.dark {
+        background-color: $dark-button1;
+        color: $dark-numbers;
+        border-right: 3px solid $dark-shadow1;
+        border-bottom: 3px solid $dark-shadow1;
+    }
+    &.light {
+        background-color: $light-button1;
+        color: $light-numbers;
+        border-right: 3px solid $light-shadow1;
+        border-bottom: 3px solid $light-shadow1;
+    }
+    &.third {
+        background-color: $third-button1;
+        color: $third-numbers;
+        border-right: 3px solid $third-shadow1;
+        border-bottom: 3px solid $third-shadow1;
+    }
 }
 
 
@@ -29,8 +59,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark-button2;
+    border: none;
     border-radius: 1rem;
+    cursor: pointer;
+    &.dark {
+        background-color: $dark-button2;
+        color: $dark-letter;
+        border-right: 3px solid $dark-shadow2;
+        border-bottom: 3px solid $dark-shadow2;
+    }
+    &.light {
+        background-color: $light-button2;
+        color: $dark-letter;
+        border-right: 3px solid $light-shadow2;
+        border-bottom: 3px solid $light-shadow2;
+    }
+    &.third {
+        background-color: $third-button2;
+        color: $dark-letter;
+        border-right: 3px solid $third-shadow2;
+        border-bottom: 3px solid $third-shadow2;
+    }
 }
 
 .button__reset {
@@ -40,8 +89,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark-button2;
+    border: none;
     border-radius: 1rem;
+    cursor: pointer;
+    &.dark {
+        background-color: $dark-button2;
+        color: $dark-letter;
+        border-right: 3px solid $dark-shadow2;
+        border-bottom: 3px solid $dark-shadow2;
+    }
+    &.light {
+        background-color: $light-button2;
+        color: $dark-letter;
+        border-right: 3px solid $light-shadow2;
+        border-bottom: 3px solid $light-shadow2;
+    }
+    &.third {
+        background-color: $third-button2;
+        color: $dark-letter;
+        border-right: 3px solid $third-shadow2;
+        border-bottom: 3px solid $third-shadow2;
+    }
 }
 
 .button__equal {
@@ -52,5 +120,26 @@
     justify-content: center;
     align-items: center;
     background-color: $dark-button3;
+    border: none;
+    border-right: 3px solid $dark-shadow3;
+    border-bottom: 3px solid $dark-shadow3;
     border-radius: 1rem;
+    cursor: pointer;
+    &.dark {
+        background-color: $dark-button3;
+        color: $dark-letter;
+        border-right: 3px solid $dark-shadow3;
+        border-bottom: 3px solid $dark-shadow3;
+    }
+    &.light {
+        background-color: $light-button3;
+        color: $dark-letter;
+        border-right: 3px solid $light-shadow3;
+        border-bottom: 3px solid $light-shadow3;
+    }
+    &.third {
+        background-color: $third-button3;
+        border-right: 3px solid $third-shadow3;
+        border-bottom: 3px solid $third-shadow3;
+    }
 }
