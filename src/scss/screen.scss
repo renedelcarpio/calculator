@@ -23,4 +23,8 @@
         background-color: $third-screen;
         color: $third-letter;
     }
+
+    @media (max-width: 550px ) {
+        width: 80%;
+    }
 }

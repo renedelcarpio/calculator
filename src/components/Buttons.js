@@ -70,7 +70,7 @@ const Buttons = () => {
 				value='DEL'
 				onClick={handleDelete}
 			>
-				<h1>DEL</h1>
+				<h2>DEL</h2>
 			</button>
 
 			<button
@@ -84,7 +84,7 @@ const Buttons = () => {
 				value='RESET'
 				onClick={clear}
 			>
-				<h1>RESET</h1>
+				<h2>RESET</h2>
 			</button>
 			<button
 				className={
@@ -97,7 +97,7 @@ const Buttons = () => {
 				value='='
 				onClick={handleCalculate}
 			>
-				<h1>=</h1>
+				<h2>=</h2>
 			</button>
 		</div>
 	);

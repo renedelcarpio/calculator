@@ -17,6 +17,10 @@
     &.third {
         background-color: $third-pad;
     }
+
+    @media (max-width: 550px){
+        width: 80%;
+    }
 }
 
 .button {
@@ -52,6 +56,11 @@
         border-right: 3px solid $third-shadow1;
         border-bottom: 3px solid $third-shadow1;
     }
+
+    @media (max-width: 550px){
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 
@@ -82,6 +91,10 @@
         border-right: 3px solid $third-shadow2;
         border-bottom: 3px solid $third-shadow2;
     }
+    @media (max-width: 550px){
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 .button__reset {
@@ -111,6 +124,10 @@
         color: $dark-letter;
         border-right: 3px solid $third-shadow2;
         border-bottom: 3px solid $third-shadow2;
+    }
+    @media (max-width: 550px){
+        width: 12rem;
+        height: 5rem;
     }
 }
 
@@ -143,5 +160,9 @@
         background-color: $third-button3;
         border-right: 3px solid $third-shadow3;
         border-bottom: 3px solid $third-shadow3;
+    }
+    @media (max-width: 550px){
+        width: 12rem;
+        height: 5rem;
     }
 }
