@@ -8,8 +8,10 @@ const Buttons = () => {
 
 	const { result, setResult } = useContext(ResultContext);
 
+	const characters = [7, 8, 9, '+', 4, 5, 6, '-', 1, 2, 3, '*', '.', 0, '/'];
+
 	const handleClick = (e) => {
-		setResult(result.concat(e.target.value));
+		setResult(result + e.target.value);
 	};
 
 	const clear = () => {
@@ -38,45 +40,25 @@ const Buttons = () => {
 					: 'buttons-container third'
 			}
 		>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='7'
-				onClick={handleClick}
-			>
-				<h1>7</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='8'
-				onClick={handleClick}
-			>
-				<h1>8</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='9'
-				onClick={handleClick}
-			>
-				<h1>9</h1>
-			</button>
+			{characters.map((item) => {
+				return (
+					<button
+						className={
+							theme === 1
+								? 'button dark'
+								: theme === 2
+								? 'button light'
+								: 'button third'
+						}
+						key={item}
+						value={item}
+						onClick={handleClick}
+					>
+						{item}
+					</button>
+				);
+			})}
+
 			<button
 				className={
 					theme === 1
@@ -90,162 +72,7 @@ const Buttons = () => {
 			>
 				<h1>DEL</h1>
 			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='4'
-				onClick={handleClick}
-			>
-				<h1>4</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='5'
-				onClick={handleClick}
-			>
-				<h1>5</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='6'
-				onClick={handleClick}
-			>
-				<h1>6</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='+'
-				onClick={handleClick}
-			>
-				<h1>+</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='1'
-				onClick={handleClick}
-			>
-				<h1>1</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='2'
-				onClick={handleClick}
-			>
-				<h1>2</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='3'
-				onClick={handleClick}
-			>
-				<h1>3</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='-'
-				onClick={handleClick}
-			>
-				<h1>-</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='.'
-				onClick={handleClick}
-			>
-				<h1>.</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='0'
-				onClick={handleClick}
-			>
-				<h1>0</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='/'
-				onClick={handleClick}
-			>
-				<h1>/</h1>
-			</button>
-			<button
-				className={
-					theme === 1
-						? 'button dark'
-						: theme === 2
-						? 'button light'
-						: 'button third'
-				}
-				value='*'
-				onClick={handleClick}
-			>
-				<h1>x</h1>
-			</button>
+
 			<button
 				className={
 					theme === 1

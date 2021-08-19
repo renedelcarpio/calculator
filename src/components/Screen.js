@@ -18,7 +18,7 @@ const Screen = () => {
 					: 'screen-container third'
 			}
 		>
-			<h1>{result}</h1>
+			{result && <h1>{result}</h1>}
 		</div>
 	);
 };
