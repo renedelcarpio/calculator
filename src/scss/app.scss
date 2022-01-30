@@ -12,8 +12,11 @@
 }
 
 .calculator {
-    display: felx;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
     font-family: $font1;
-    width: 50rem;
+    width: 100vw;
     height: 60rem;
 }
